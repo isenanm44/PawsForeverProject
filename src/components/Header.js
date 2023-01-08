@@ -15,11 +15,12 @@ const HomePage = () => {
         <Collapse navbar isOpen={menuOpen}>
           <Nav className="ms-auto" navbar>
             <NavLink to="/" className="nav-link">
-              Create an Account
+              About The Developer
             </NavLink>
             <NavLink to="/" className="nav-link">
-              Log In
+              FAQ
             </NavLink>
+            <NavLink to='/' className='nav-link'>Resources</NavLink>
           </Nav>
         </Collapse>
       </Navbar>
