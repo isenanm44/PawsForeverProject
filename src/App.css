@@ -1,0 +1,16 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  height: 20vh;
+  font-weight: 500;
+}
+
+.header-two {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
