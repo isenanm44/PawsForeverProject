@@ -2,6 +2,7 @@ import { Navbar, NavbarBrand, NavItem, Collapse, NavbarToggler, Card, CardImg, C
 import aladdin from "../images/aladdin.png";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import UserLoginForm from "../user/LoginForm";
 
 const HomePage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +15,7 @@ const HomePage = () => {
         <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
         <Collapse navbar isOpen={menuOpen}>
           <Nav className="ms-auto" navbar>
+            <UserLoginForm />
             <NavLink to="/" className="nav-link">
               About The Developer
             </NavLink>

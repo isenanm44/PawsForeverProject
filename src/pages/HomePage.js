@@ -1,5 +1,7 @@
 import React from "react";
-import { Col, Row, Container, Card, CardBody, CardHeader, Button } from "reactstrap";
+import { Col, Row, Container, Card, CardBody, CardHeader, Button, Nav, NavItem } from "reactstrap";
+import { NavLink } from "react-router-dom";
+import UserLoginForm from "../user/LoginForm";
 
 const HomePage = () => {
   return (
@@ -24,16 +26,14 @@ const HomePage = () => {
       <Row>
         <Col col="sm-6">
           <Card className="card text-center">
-            <CardHeader style={{ backgroundColor: "violet" }}>Create a profile</CardHeader>
-            <CardBody>See all swiped favorite cats and dogs in one place</CardBody>
+            <CardHeader style={{ backgroundColor: "violet" }}>First, create a profile</CardHeader>
+            <CardBody>Keep Track of The Animals You Have Matched With</CardBody>
           </Card>
         </Col>
         <Col col="sm-6" style={{ marginBottom: "50px" }}>
           <Card className="card text-center">
             <CardHeader style={{ backgroundColor: "violet" }}>Complete a Pet Parent Questionnaire</CardHeader>
-            <CardBody>
-              Tell us what kind of pet you are looking for and we will show you only relevant matches!
-            </CardBody>
+            <CardBody>Tell us what kind of pet you are looking for and we will optimize your search</CardBody>
           </Card>
         </Col>
         <Col col="sm-6">
@@ -46,12 +46,14 @@ const HomePage = () => {
 
       <Row>
         <Col style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <Button style={{ marginBottom: "50px", backgroundColor: "purple", color: "blanchedalmond" }}>Log In</Button>
-          <Button
-            style={{ marginBottom: "50px", marginLeft: "10px", color: "blanchedalmond", backgroundColor: "purple" }}
-          >
-            Create an Account
-          </Button>
+          <Nav>
+            <NavItem>
+              <NavLink
+                style={{color: 'purple', fontSize: 30, marginBottom: '100px'}}
+                to='/signUp'> Create An Account
+              </NavLink>
+            </NavItem>
+          </Nav>
         </Col>
       </Row>
     </Container>
