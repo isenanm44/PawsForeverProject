@@ -1,7 +1,6 @@
 import React from "react";
-import { Col, Row, Container, Card, CardBody, CardHeader, Button, Nav, NavItem } from "reactstrap";
+import { Col, Row, Container, Card, CardBody, CardHeader, Nav, NavItem } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import UserLoginForm from "../user/LoginForm";
 
 const HomePage = () => {
   return (

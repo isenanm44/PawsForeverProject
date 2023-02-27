@@ -14,3 +14,12 @@
   margin-bottom: 50px;
   margin-left: 50px;
 }
+
+.signupform {
+  align-self: center;
+  display: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+
