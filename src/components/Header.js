@@ -10,7 +10,7 @@ const HomePage = () => {
     <div>
       <Navbar sticky="top" expand="md" style={{ backgroundColor: "burlywood" }}>
         <NavbarBrand href="/">
-          <img src={aladdin} style={{ height: 40 }} /> Puppy Love
+          <img src={aladdin} style={{ height: 40 }} alt='aladdin' /> Puppy Love
         </NavbarBrand>
         <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
         <Collapse navbar isOpen={menuOpen}>
